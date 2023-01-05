@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap');
+
+*,
+*::after,
+*::before{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    background-image: linear-gradient(to bottom, #141b29, #0c111b 300px);
+}
+
+html{
+    font-size: 16px;
+}
+
+.container{
+    max-width:93.75rem;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+/* Header starts here */
+
+.header{
+    width: 100%;
+    background-size:cover;
+    background-image:linear-gradient(90deg, rgba(3,37,22,0.6643032212885154) 69%, rgba(3,37,35,0.28335084033613445) 100%),
+    url('https://www.themoviedb.org/t/p/w1920_and_h800_multi_faces/8V1XPEDLtJoxOWlE6gYzn2sQaMp.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header-navigation{
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #032541; */
+    width: 100%;
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1212;
+    transition: all 1s ease-in;
+}
+
+.bg-active{
+   background-image: linear-gradient(to bottom, #141b29, #0c111b 300px);
+}
+
+.logo{
+    width: 10rem;
+    cursor: pointer;
+    transform: translateY(-6px);
+}
+
+.links{
+    width: 33.75rem;
+}
+
+.link{
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    justify-content: flex-start;
+    align-items: center;
+    list-style-type: none;
+}
+
+li{
+    position: relative;
+}
+
+ul li:not(first-child){
+    margin-right: 2rem;
+}
+
+
+/* Header ends here */
+
+/* Hero section starts here */
+
+.modal-window{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(179.81deg, rgba(4,4,4,0.7) .17%, rgba(4,4,4,0.45) 85.02%, rgba(4,4,4,0.3) 112.52%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 12112123;
+    display: none;
+    padding: 2rem;
+}
+
+.active{
+    display: block;
+}
+
+.close{
+    width: 100%;
+    align-self: flex-start;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 2rem 2rem;
+    cursor: pointer;
+}
+
+.modal{
+    height: 100vh;
+    justify-content: center;
+}
+
+.video{
+    width: 40rem;
+    height: 30rem;
+}
+
+.hero{
+    width: 100%;
+    /* padding: 0 2rem; */
+}
+
+
+.hero-section{
+    justify-content: flex-start;
+    padding:3rem 2rem 2rem 2rem;
+    gap: 3rem;
+    color: white;
+    padding-top: 6.5rem;
+}
+
+.hero-content{
+    width: 60%;
+}
+
+.hero-details{
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem 0;
+}
+
+
+.poster{
+    border-radius: 10px;
+    width: 20rem;
+}
+
+.trending{
+    font-size: 1rem;
+    padding: 2rem 0 .5rem 0;
+    font-weight: 600;
+}
+
+.movie-name{
+    font-size: 2.5rem;
+}
+
+.movie-name .year{
+    font-weight: 400;
+    opacity: .8;
+}
+
+.release{
+    font-size: 1rem;
+    padding-top: .8rem;
+    font-weight: 700;
+}
+
+.rating-box{
+    background-color: #032541;
+    border-radius: 100%;
+    width: 60px;
+    height:60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rating{
+    justify-content: flex-start;
+    align-items: center;
+    gap: .6rem;
+}
+
+.rating-box{
+    border: 4px solid #21d07a;
+}
+.user-score{
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.popularity{
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.list{
+    width: 3rem;
+    height: 3rem;
+    background-color: #032541;
+    padding: 1rem;
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.list img{
+    width: 1rem;
+    height: 1rem;
+}
+
+.btn{
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 600;
+    background: transparent;
+    border: none;
+    color: white;
+    margin-top: 2rem;
+    gap: .5rem;
+    font-family:'Source Sans Pro', sans-serif;
+    cursor: pointer;
+}
+
+.btn:hover{
+    opacity: .8;
+}
+
+.sub-btn{
+    background-color: #fff;
+    color: black;
+    border: 2px solid black;
+    border-radius: 4px;
+    margin-top: 0;
+    border: none;
+    padding: .8rem 1.6rem;
+}
+
+.btn img{
+    width: 1rem;
+}
+
+.sub-hero-content{
+     width: 100%;
+     background: linear-gradient(179.81deg, rgba(4,4,4,0.7) .17%, rgba(4,4,4,0.45) 85.02%, rgba(4,4,4,0.3) 112.52%) !important;
+     padding: 1rem 2rem;
+     margin-top: 2rem;
+}
+
+.content{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logos{
+    width: 16rem;
+}
+
+.sub-hero-heading{
+    color: #1ce783;
+    font-size: .8rem;
+    padding: .5rem 0;
+}
+
+.subhero-content{
+    width: 40%;
+}
+
+.subhero-subheading{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: white;
+}
+
+.subhero-link{
+    color: #fff;
+    opacity: 0.7;
+    font-size: .8rem;
+    padding-top: .5rem;
+    display: inline-block;
+    text-decoration: underline;
+}
+
+/* Hero section ends here */
+
+/* all section starts here */
+
+::-webkit-scrollbar{
+   width: 10px;
+   /* display: none; */
+}
+
+::-webkit-scrollbar-track{
+    background-image: linear-gradient(to bottom, #141b29, #0c111b 300px);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color:rgba(2, 2, 5, 0.839);
+    width: 10px;
+    border-radius: 10px;
+}
+
+.wrapper-heading{
+    padding: 1rem 2rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.boxes{
+   justify-content: flex-start;
+   align-items: center;
+   overflow-x:scroll;
+   padding: 2rem 2rem 3rem 2rem;
+   flex-wrap: nowrap;
+   /* margin-bottom: 2rem; */
+}
+
+.movie{
+    width:9.375rem;
+    height: 12rem;
+    margin-right: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform .2s ease-in;
+}
+
+
+.now:hover,.movie:hover{
+    transform: scale(1.3);
+}
+
+.now{
+    width: 9.375rem;
+    height: 12em;
+    margin-right: 1rem;
+    border-radius: 10px;
+    transition: transform .2s ease-in;
+    cursor: pointer;
+}
+/* all section ends here */
+
+
+@media(max-width:1200px){
+    html{
+        font-size: 14px;
+    }  
+}
+
+@media(max-width:1100px){
+    html{
+        font-size: 12px;
+    }  
+}
+
+@media(max-width:1000px){
+
+   .hero-section{
+    flex-direction:column;
+   }
+
+   .hero-content{
+    width: 100%;
+   }
+
+   .content{
+    flex-direction: column;
+    text-align: center;
+   }
+
+   .subhero-content{
+    padding: 2.5rem 0;
+    width: 100%;
+   }
+
+   .header{
+    background-position: 0px  4.375rem;
+    background-size: 100%;
+   }
+
+   .poster{
+    width: 35%;
+   }
+
+   .sub-btn{
+      padding: 1rem 2rem;
+      font-size: 10px;
+   }
+}
+
+
+
